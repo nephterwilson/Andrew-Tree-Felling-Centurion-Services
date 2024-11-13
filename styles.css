@@ -1,0 +1,96 @@
+/* General Body Styles */
+body {
+    background: linear-gradient(120deg, #2e7d32, #66bb6a, #9ccc65);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Gradient Footer Styles */
+.gradient-footer {
+    background: linear-gradient(135deg, #bc1666, #f466ed, #b3e0b5);
+    background-size: 200% 200%;
+    animation: gradientShift 10s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Footer Custom Styles */
+.custom-footer {
+    background-color: #2c3e50; /* Dark Blue-Green */
+    width: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
+}
+
+/* Heading and Carousel Adjustments for Mobile */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5rem; /* Ensuring smaller font size for mobile */
+    }
+
+    .navbar-brand {
+        font-size: 0.875rem; /* Adjusted navbar text size for mobile */
+    }
+
+    .carousel-item img {
+        width: 100%; /* Ensures the image fills its container */
+        height: auto; /* Keeps aspect ratio intact */
+    }
+}
+
+/* Heading and Carousel Adjustments for Tablets */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.75rem; /* Slightly larger font for tablets */
+    }
+
+    .carousel-item img {
+        width: 100%; /* Ensures the image fills its container */
+        height: auto; /* Keeps aspect ratio intact */
+    }
+}
+
+/* Heading and Carousel Adjustments for Laptops */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2rem; /* Larger font for laptops */
+    }
+
+    .carousel-item img {
+        width: 100%; /* Ensures the image fills its container */
+        height: auto; /* Keeps aspect ratio intact */
+    }
+}
