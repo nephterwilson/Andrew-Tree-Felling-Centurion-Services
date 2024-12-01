@@ -55,42 +55,100 @@ body {
     right: 0;
 }
 
-/* Heading and Carousel Adjustments for Mobile */
-@media (max-width: 576px) {
-    h1 {
-        font-size: 1.5rem; /* Ensuring smaller font size for mobile */
-    }
-
-    .navbar-brand {
-        font-size: 0.875rem; /* Adjusted navbar text size for mobile */
-    }
-
-    .carousel-item img {
-        width: 100%; /* Ensures the image fills its container */
-        height: auto; /* Keeps aspect ratio intact */
-    }
+/* Default Styles (Large Screens - Desktop) */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
 }
 
-/* Heading and Carousel Adjustments for Tablets */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 1.75rem; /* Slightly larger font for tablets */
-    }
-
-    .carousel-item img {
-        width: 100%; /* Ensures the image fills its container */
-        height: auto; /* Keeps aspect ratio intact */
-    }
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-/* Heading and Carousel Adjustments for Laptops */
+.container {
+  padding: 20px;
+}
+
+/* Medium Screens - Tablets */
 @media (max-width: 1024px) {
-    h1 {
-        font-size: 2rem; /* Larger font for laptops */
-    }
+  h1 {
+    font-size: 1.8rem;
+  }
 
-    .carousel-item img {
-        width: 100%; /* Ensures the image fills its container */
-        height: auto; /* Keeps aspect ratio intact */
-    }
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .navbar-brand {
+    font-size: 1rem;
+  }
+
+  .carousel img {
+    height: auto;
+  }
 }
+
+/* Small Screens - Mobile Phones */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+    color: #343a40;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .navbar-brand {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Extra Small Screens - Very Small Mobile Devices */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+
+  .carousel img {
+    width: 100%;
+    height: auto;
+  }
+}
+
